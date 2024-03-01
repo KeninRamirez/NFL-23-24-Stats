@@ -6,6 +6,8 @@ In this case study, I will perform many tasks of a data analyst. In order to ans
 
 -Python Code: [nfl_portfolio_project](https://github.com/KeninRamirez/NFL-23-24-Stats/blob/main/nfl_portfolio_project.ipynb)
 
+-Data Visualizations: Python
+
 # Ask
 ### Business Task
 
