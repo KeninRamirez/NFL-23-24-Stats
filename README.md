@@ -9,7 +9,7 @@ In this case study, I will perform many tasks of a data analyst. In order to ans
 # Ask
 ### Business Task
 
-Determine the key statistical factors that have the greatest impact on securing vitories.
+Determine the key statistical factors that have the greatest impact on securing victories.
 
 ### Guiding Questions
 
