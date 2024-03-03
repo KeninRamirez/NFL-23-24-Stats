@@ -65,7 +65,30 @@ I decided to use Microsoft Excel and Python libraries for this project. I was ab
 Measures for SLR model: ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/4c8b5c9a-9e5f-49ab-a031-8783bc81caa3) ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/33d77c9e-9152-453a-a6b9-273356141efc)
 Measures for MLR model: ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/82dd4a99-f480-4219-812c-777ff52fe0d0) ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/5e700556-e00d-4a44-9038-785c6c22d971)
 ### Model Evaluation and Refinement
-An important step in testing your model is to split your data into training and testing data. ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/01224d0e-2464-4f11-97ae-8216937b5379) ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/49b5db65-2a41-40ac-8a1c-3a8916a9f459)
+1. An important step in testing your model is to split your data into training and testing data. ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/01224d0e-2464-4f11-97ae-8216937b5379) ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/49b5db65-2a41-40ac-8a1c-3a8916a9f459)
+2. We then test our test data and trainig data: ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/cae47c58-b2fc-49ac-96ac-be7c27150cdb)
+3. Sometimes you do not have sufficient testing data; as a result, you may want to perform cross-validation. ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/233f255f-ee7b-4730-91d7-2424e5aed717)
+4. We then check for overfitting and underfitting: ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/894a5c11-c9c1-48e9-aa04-6b26f7084b5b) Prediction using training data: ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/40002860-d6fa-4a3e-a745-df8523455329) Predcition using test data: ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/158d5538-9f36-4692-adec-0a0192c0d6e2)
+5. Next lets perform some model evaluation using our training and testing data separately. Training Data: ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/8d6f1c7f-3c73-46ec-8642-f362d13830c8) ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/e3172868-c61e-4de5-8c80-34335d64936b)
+6. Test Data: ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/dd6cf7f9-14a6-4d79-88d0-148ac701a35b) ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/9066669f-597e-41d3-9e08-1ff70b48ad31)
+Comparing Figure 1 and Figure 2, it is evident that the distribution of the test data in Figure 1 is much better at fitting the data.
+### Ridge Regression
+1. In this section, we will review Ridge Regression and see how the parameter alpha changes the model. ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/0f5398c2-ee51-4861-9f96-13a13427103a)
+2. We select the value of alpha that minimizes the test error. To do so, we can use a for loop. We have also created a progress bar to see how many iterations we have completed so far. ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/152e7f0c-99e6-47c6-b06c-d3f689af904d)
+3. We can plot out the value of R^2 for different alphas: ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/e75b2abd-1da8-4c66-9efd-71b06ccd2789) ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/a955274d-4eb9-4de0-901b-e1a6c3193ab2) The red line in the figure represents the R^2 of the training data. As alpha increases the R^2 decreases. Therefore, as alpha increases, the model performs worse on the training data. The blue line represents the R^2 on the validation data. As the value for alpha increases, the R^2 increases and converges at a point.
+4. We can do this process in a much simpler fashion by utilizing Grid Serarch: ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/6d041f83-d0ed-4c19-8c51-7dc6f0f8e09c)
+5. Now we test our model on the test data: ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/64f372c7-409b-4886-b500-be39c726fa50) Our R^2
+
+
+
+
+
+
+
+
+
+
+
 
 
 
