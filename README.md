@@ -1,5 +1,6 @@
 # Introduction
-In this case study, I will perform many tasks of a data analyst. In order to answer key questions, I will follow the steps of the data analysis process: Ask, Prepare, Process, Analyze, Share, and Act.
+With the '23-'24 NFL season coming to an end, I thought I'd take up the opportunity to showcase my talents and do a case study. In this case study, I will perform many tasks of a data analyst and in order to answer key questions, I will follow the steps of the data analysis process: Ask, Prepare, Process, Analyze, Share, and Act. If anyone has any insights, recommendations, or constructive criticism, I am all ears!
+
 ### Quick Links
 
 -Data Source: [Pro Football Reference](https://www.pro-football-reference.com/years/2023/) Accessed: 2/17/2024
