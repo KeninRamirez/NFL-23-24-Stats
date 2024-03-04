@@ -8,6 +8,9 @@ In this case study, I will perform many tasks of a data analyst. In order to ans
 
 -Data Visualizations: Python
 
+### TLDR
+Comparing both Linear Regression models, we conclude that the MLR model is the best model to be able to predict wins from our dataset. This result makes sense since we have 17 variables in the model and we know that more than one of those variables are potential predictors of securing victories. However, more analysis must be done on ambiguous variables such as: Def Rank, Kicking Rank, and Off Rank.
+
 # Ask
 ### Business Task
 
@@ -15,11 +18,9 @@ Determine the key statistical factors that have the greatest impact on securing 
 
 ### Guiding Questions
 
-1. What topic am I exploring?
-2. What is the problem I am trying to solve?
-3. What metrics will I use to measure my data to achieve my objective?
-4. Who are/is the stakeholders/audience?
-5. How can my insights help make decisions?
+1. What is the problem I am trying to solve?
+2. What metrics will I use to achieve my objective?
+3. How can my insights help make decisions?
 
 # Prepare
 ### Data Source
@@ -32,7 +33,6 @@ There are 6 files I used (AFC Standings, NFC Standings, Team Offense, Kick & Pun
 ### Data Credibility
 The data is original and comes from a reliable organization, comprehensive, current, and cited.
 
-### Licensing and Privacy
 
 # Process
 ### Tools
@@ -69,9 +69,11 @@ I decided to use Microsoft Excel and Python libraries for this project. I was ab
   
 ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/2fffaef7-a6e7-47a1-91e7-c921c78bac8c) ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/3e4be767-aa6d-4c96-b5c4-d3f0f7958274)
 
-2. When evaluating the SLR model I built a Residual Plot. If the points in a residual plot are randomly spread out around the x-axis, then a linear model is appropriate for the data. Randomly spread out residuals means that the variance is constant, and thus the linear model is a good fit for this data.
+2. When evaluating the SLR model I built a Residual Plot. If the points in a residual plot are randomly spread out around the x-axis, then a linear model is appropriate for the data.
 
 ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/1cf5a759-7ba2-4b05-a86b-213b68dc281d) ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/481b8cc8-88ce-4fef-aede-6a2a118513e9)
+
+Randomly spread out residuals means that the variance is constant, and thus the linear model is a good fit for this data.
 
 3. Since we cant evaluate MLR models using regression plots, we used a distribution plot instead. We can look at the distribution of the fitted values that result from the model and compare it to the distribution of the actual values.
 
@@ -89,8 +91,14 @@ Measures for MLR model:
 ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/8cd05896-3163-4b16-beba-42c2e01141bd)
 ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/cc16d82a-1a3b-46a8-bbd9-86b02d53dab9)
 
+When comparing models, the model with the higher R-squared value is a better fit for the data.
+
+When comparing models, the model with the smallest MSE value is a better fit for the data.
+
+Therefore, our MLR model is the better model.
+
 ### Model Evaluation and Refinement
-1. An important step in testing your model is to split your data into training and testing data.
+1. An important step in testing your model is to split your data into training and testing data. We can randomly split the data into training and testing data using the function train_test_split.
 
 ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/01224d0e-2464-4f11-97ae-8216937b5379) ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/49b5db65-2a41-40ac-8a1c-3a8916a9f459)
  
@@ -98,11 +106,13 @@ Measures for MLR model:
 
 ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/cae47c58-b2fc-49ac-96ac-be7c27150cdb)
 
-3. Sometimes you do not have sufficient testing data; as a result, you may want to perform cross-validation.
+3. Sometimes we do not have sufficient testing data; as a result, you may want to perform cross-validation.
   
 ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/233f255f-ee7b-4730-91d7-2424e5aed717)
 
-4. We then check for overfitting and underfitting:
+Each element in the array has the average R^2 value for the fold
+
+4. Sometimes the test data is a much better measure of how well your model performs in the real world. One reason for this is overfitting.
 
 ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/894a5c11-c9c1-48e9-aa04-6b26f7084b5b) 
 
@@ -147,7 +157,25 @@ The red line in the figure represents the R^2 of the training data. As alpha inc
   
 6. Our R^2 for the Ridge Regression Model is .79798, meaning 79.798% of the variation of wins is explained by this model
 
+### Summary
+Comparing both Linear Regression models, we conclude that the MLR model is the best model to be able to predict wins from our dataset. This result makes sense since we have 17 variables in the model and we know that more than one of those variables are potential predictors of securing victories. 
 
+# Act
+Based on the analysis, teams across the NFL can focus on key variables to increase their chances of winning.
+
+### Recommendations
+1. Offensive statistics such as scoring points (PF), offensive rank (Off Rank), and Kicking Rank are the most important statistics in securing victories. Therefore, teams should prioritize developing these areas.
+  
+2. Defensive statistics are important, but aren't as important as other offensive statistics. Some areas to focus on the defense is limiting points allowed (PA) and limiting the run game(Def Rush Att, Rush 1stD Allowed, Rush TD Allowed).
+
+### Limitations
+1. More analysis must be done on variables such as: Def Rank, Kicking Rank, and Off Rank (How are they ranked? What variables are important when ranking?).
+
+2. There may be more variables that could be potential predictors that weren't included in the model (correlation cutoff = -/+ 0.50).
+
+3. Other statistical categories were not included such as Punting, Conversions, Drive Averages, etc., which can also be potential predictors.
+
+4. The overall analysis may be incorrect. 
 
 
 
