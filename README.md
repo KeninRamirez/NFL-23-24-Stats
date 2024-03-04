@@ -11,6 +11,11 @@ In this case study, I will perform many tasks of a data analyst. In order to ans
 ### TLDR
 Comparing both Linear Regression models, we conclude that the MLR model is the best model to be able to predict wins from our dataset. This result makes sense since we have 17 variables in the model and we know that more than one of those variables are potential predictors of securing victories. However, more analysis must be done on ambiguous variables such as: Def Rank, Kicking Rank, and Off Rank.
 
+Recommendations:
+1. Offensive statistics such as scoring points (PF), offensive rank (Off Rank), and Kicking Rank are the most important statistics in securing victories. Therefore, teams should prioritize developing these areas.
+  
+2. Defensive statistics are important, but aren't as important as other offensive statistics. Some areas to focus on the defense is limiting points allowed (PA) and limiting the run game(Def Rush Att, Rush 1stD Allowed, Rush TD Allowed).
+
 # Ask
 ### Business Task
 
