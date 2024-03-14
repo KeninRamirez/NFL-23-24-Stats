@@ -47,6 +47,8 @@ The data is original and comes from a reliable organization, comprehensive, curr
 
 I decided to use Microsoft Excel and Python libraries for this project. I was able to use excel because there wasn't large amounts of data. If the data had 1 million+ rows, I'd use BigQuery. I utilized Python libraries to combine, clean, and analyze the various datasets.
 
+I also utilized Microsoft SQL Server to perform queries an analyst might use on this dataset.
+
 ### Data Cleaning and Preprocessing
 
 1. The first step I took was to combine the AFC and NFC standings datasets (teams_df) since their column names were the exact same and any changes I needed to make can be done once. I then renamed the 'Tm' column to 'Team', changed data type to string, and stripped the values within the column to get rid of unwanted spaces and characters. ![image](https://github.com/KeninRamirez/NFL-23-24-Stats/assets/135486374/5d0011bc-5a88-4cb7-a96b-8e81e687e1ce)
