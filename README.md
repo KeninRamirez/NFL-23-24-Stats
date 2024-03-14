@@ -5,9 +5,9 @@ With the '23-'24 NFL season coming to an end, I thought I'd take up the opportun
 
 -Data Source: [Pro Football Reference](https://www.pro-football-reference.com/years/2023/) Accessed: 2/17/2024
 
--Python Code: [nfl_portfolio_project](https://github.com/KeninRamirez/NFL-23-24-Stats/blob/main/nfl_portfolio_project.ipynb)
+-Python Code: [NFL_Python](https://github.com/KeninRamirez/NFL-23-24-Stats/blob/main/nfl_portfolio_project.ipynb)
 
--SQL Server Code: [NFL](https://github.com/KeninRamirez/NFL-23-24-Stats/blob/main/NFL.sql)
+-SQL Server Code: [NFL_SQL](https://github.com/KeninRamirez/NFL-23-24-Stats/blob/main/NFL.sql)
 
 -Data Visualizations: Python
 
