@@ -7,6 +7,8 @@ With the '23-'24 NFL season coming to an end, I thought I'd take up the opportun
 
 -Python Code: [nfl_portfolio_project](https://github.com/KeninRamirez/NFL-23-24-Stats/blob/main/nfl_portfolio_project.ipynb)
 
+-SQL Server Code: [NFL](https://github.com/KeninRamirez/NFL-23-24-Stats/blob/main/NFL.sql)
+
 -Data Visualizations: Python
 
 ### TLDR
