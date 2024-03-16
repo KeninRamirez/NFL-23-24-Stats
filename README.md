@@ -11,6 +11,8 @@ With the '23-'24 NFL season coming to an end, I thought I'd take up the opportun
 
 -Data Visualizations: Python
 
+-Tableau Dashboard: [NFL Dashboard](https://public.tableau.com/app/profile/kenin.ramirez/viz/23-24NFL/NFLDashboard?publish=yes)
+
 ### TLDR
 Comparing both Linear Regression models, we conclude that the MLR model is the best model to be able to predict wins from our dataset. This result makes sense since we have 17 variables in the model and we know that more than one of those variables are potential predictors of securing victories. However, more analysis must be done on ambiguous variables such as: Def Rank, Kicking Rank, and Off Rank.
 
