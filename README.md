@@ -9,7 +9,7 @@ With the '23-'24 NFL season coming to an end, I thought I'd take up the opportun
 
 -SQL Server Code: [NFL_SQL](https://github.com/KeninRamirez/NFL-23-24-Stats/blob/main/NFL.sql)
 
--Data Visualizations: Python
+-Data Visualizations: Python (Matplotlib)
 
 -Tableau Dashboard: [NFL Dashboard](https://public.tableau.com/app/profile/kenin.ramirez/viz/23-24NFL/NFLDashboard?publish=yes)
 
